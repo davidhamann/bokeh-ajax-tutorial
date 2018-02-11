@@ -23,7 +23,7 @@ def data():
     global x
     x += 1
     y = 2**x
-    return jsonify(x=[x], y=[y])
+    return jsonify(x=x, y=y)
 
 def make_plot():
     plot = figure(plot_height=300, sizing_mode='scale_width')
